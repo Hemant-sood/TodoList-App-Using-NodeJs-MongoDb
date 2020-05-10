@@ -1,0 +1,34 @@
+body {
+    background-color: red;
+}
+
+.shine {
+    position: relative;
+    font-family: Geneva, sans-serif;
+    font-size: 40px;
+    font-family: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #DC143C, #fff, rgb(32, 125, 212));
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+.blue {
+    background-color: seagreen;
+}
+
+@keyframes animate {
+    0% {
+        background-position: -500%;
+    }
+    50% {
+        background-position: 0;
+    }
+    100% {
+        background-position: 500%;
+    }
+}
