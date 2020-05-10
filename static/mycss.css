@@ -1,15 +1,11 @@
-body {
-    background-color: red;
-}
-
 .shine {
     position: relative;
     font-family: Geneva, sans-serif;
-    font-size: 40px;
+    font-size: 60px;
     font-family: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
-    background: linear-gradient(90deg, #DC143C, #fff, rgb(32, 125, 212));
+    background: linear-gradient(90deg, #c710ff, #DC143C, rgb(62, 248, 5), #ffe600, rgb(32, 125, 212));
     background-repeat: no-repeat;
     background-size: 80%;
     animation: animate 3s infinite;
@@ -17,16 +13,18 @@ body {
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
 
-.blue {
-    background-color: seagreen;
-}
-
 @keyframes animate {
     0% {
         background-position: -500%;
     }
+    30% {
+        background-position: -250;
+    }
     50% {
         background-position: 0;
+    }
+    70% {
+        background-position: 250;
     }
     100% {
         background-position: 500%;
